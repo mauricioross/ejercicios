@@ -13,13 +13,17 @@
             li{
                 float: left;
                 margin-right: 1rem;
-                padding: 1rem 4rem;
+                    
                 background-color: rgb(41, 145, 145);
                 color: white;
                 text-align: left;
                 cursor: pointer;
                 .link{
                     text-decoration-style: none;
+                    
+                }
+                a{
+                    padding:1rem 4rem;
                 }
             }
             
