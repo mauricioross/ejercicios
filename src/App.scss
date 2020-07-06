@@ -1,0 +1,33 @@
+.App{
+    display: flex;
+    justify-content: center;
+
+    text-align: center;
+    .menu{
+        display: flex;
+    justify-content: center;
+
+        ul{
+            list-style-type:none;
+            padding-left: 0;
+            li{
+                float: left;
+                margin-right: 1rem;
+                padding: 1rem 4rem;
+                background-color: rgb(41, 145, 145);
+                color: white;
+                text-align: left;
+                cursor: pointer;
+                .link{
+                    text-decoration-style: none;
+                }
+            }
+            
+        }
+       
+    }
+    .pageContainer{
+        display: flex;
+        justify-content: center;
+    }
+}

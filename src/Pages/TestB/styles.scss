@@ -1,0 +1,62 @@
+/* The component style is inserted here. */
+.testB-container {
+    & .tooltip{
+        border: 1px solid black;
+    }
+}
+.grilla {
+  display: grid;
+  grid-template-columns: repeat(1, 2fr);
+  grid-gap: 10px;
+  grid-auto-rows: 154px;
+
+  align-items: start;
+  clear: both;
+}
+.item {
+  width: 90%;
+  display: flex;
+  height: 100%;
+  margin: 1rem;
+  border: 2px solid red;
+  border-radius: 15px;
+  position: relative;
+  & .card-body {
+    padding-left: 154px;
+    width: 100%;
+    h4{
+        margin-top: .5rem;
+    }
+  }
+  & .content {
+    font-size: 12px;
+  }
+  & .info{
+      margin:0 .5rem;
+  }
+  & .footer{
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      bottom: 4px;
+      right: 2px;
+  }
+}
+.cardImage {
+  position: absolute;
+  //width: 100%;
+  max-width: 10vw;
+  min-width: 10vw;
+  height: 154px;
+  object-fit: cover;
+  border-radius: 13px 0 0 13px;
+  background-position: center;
+}
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px){
+      .cardImage{
+        max-width: 35vw;
+        min-width: 35vw;
+      }
+  }
